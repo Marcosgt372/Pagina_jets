@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Black.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("../font/Signika-Regular.ttf") format("TrueType");
+}
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    display: relative;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Signika;
+    top: 500px;
+  }
+  
+  .footer-map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60%;
+    margin-bottom: 20px;
+  }
+  
+  iframe {
+    width: 900px;
+    height: 450px;
+  }
+  
+  .footer-contact {
+    flex-basis: 40%;
+    width: 350px;
+    margin-left: 50px;
+  }
+  
+  .footer-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-contact-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .footer-contact-item p {
+    margin: 0;
+  }
+  
+  
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .footer-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .footer-social a i {
+    font-size: 1.5rem;
+    background-color: transparent;
+  }
+  
+  .footer-social #fac:hover {
+    background-color: #3b5998;
+  }
+  
+  .footer-social #inst:hover {
+    background-color: #833ab4;
+  }
+  
+  .footer-social #lin:hover {
+    background-color: #0e76a8;
+  }
+  
+  .footer-social #yt:hover {
+    background-color: #ff0000;
+  }
+  
+  .footer-social a:hover i {
+    color: #fff;
+    transform: rotate(360deg);
+  }
+  
+  .footer-social a:hover i.fa-facebook {
+    color: #fff;
+    background-color: #3b5998;
+  }
+  
+  .footer-social a:hover i.fa-instagram {
+    color: #fff;
+    background-color: #833ab4;
+  }
+  
+  .footer-social a:hover i.fa-linkedin {
+    color: #fff;
+    background-color: #0e76a8;
+  }
+  
+  .footer-social a:hover i.fa-youtube {
+    color: #fff;
+    background-color: #ff0000;
+  }
+  /* Estilos para pantallas pequeñas */
+  @media only screen and (max-width: 600px) {
+    /* El mapa y la información de contacto deben mostrarse en columnas */
+    .footer-map {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    /* El iframe del mapa debe ocupar el ancho completo y reducir su altura */
+    iframe {
+      width: 100%;
+      height: 300px;
+      max-width: 900px;
+    }
+  
+    /* Los elementos de contacto deben ocupar el ancho completo */
+    .footer-contact {
+      width: 100%;
+      max-width: 350px;
+      margin-top: 20px;
+    }
+  
+    /* Los iconos y texto de contacto deben reducir su tamaño */
+    .footer-contact-item i {
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+  
+    .footer-contact-item p {
+      margin: 0;
+      font-size: 0.8rem;
+    }
+  
+    /* Los iconos de redes sociales deben reducir su tamaño */
+    .footer-social a {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+      border-radius: 50%;
+      background-color: white;
+      color: #333;
+      text-align: center;
+      line-height: 30px;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .footer-social a i {
+      font-size: 1rem;
+      background-color: transparent;
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* El mapa y la información de contacto deben mostrarse en filas */
+    .footer-map {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    /* El iframe del mapa debe ocupar el 60% del ancho disponible y mantener su altura */
+    iframe {
+      width: 60%;
+      height: 450px;
+      max-width: 900px;
+    }
+  
+    /* Los elementos de contacto deben ocupar el 40% del ancho disponible */
+    .footer-contact {
+      width: 40%;
+      max-width: 350px;
+      margin-top: 0;
+      margin-left: 50px;
+    }
+  
+    /* Los iconos y texto de contacto deben mantener su tamaño original */
+    .footer-contact-item i {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+  
+    .footer-contact-item p {
+      margin: 0;
+    }
+  
+    /* Los iconos de redes sociales deben mantener su tamaño original */
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      margin: 0 20px;
+      border-radius: 50%;
+      background-color: white;
+      color: #333;
+      text-align: center;
+      line-height: 40px;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .footer-social a i {
+      font-size: 1.5rem;
+      background-color: transparent;
+    }
+  }

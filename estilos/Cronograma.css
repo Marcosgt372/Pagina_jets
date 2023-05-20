@@ -1,0 +1,148 @@
+/*CRONOGRAMA*/
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Black.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("../font/Signika-Regular.ttf") format("TrueType");
+}
+
+.linea-sep {
+  border: none;
+  height: 10px;
+  background: #1a7b00;
+  margin: 12px auto;
+  width: 10%;
+  border-radius: 8px;
+}
+
+  .crono h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: Gilroy;
+  }
+  
+  .cronograma {
+    position: relative;
+    top:50px;
+    text-align: center;
+    font-family: Gilroy;
+  }
+  
+  /*BOTONES CROGRAMA*/
+  
+  .boton {
+    display: inline-block;
+    padding: 13px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #1a7b00;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 15px; /* Espacio entre los botones */
+    cursor: pointer;
+  }
+  
+  /* Estilo para el último botón */
+  
+  .boton:last-child {
+    margin-right: 0; /* Elimina el espacio del último botón */
+  }
+  
+  .boton:hover {
+    border-radius: 15px;
+    background-color: #1a7b00;
+    color: white;
+  }
+  
+  /*estilo cronograma*/
+  .container-cr {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px;
+    font-family: Signika;
+  }
+  
+  .event {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 2px;
+    border-top: 3px solid green;
+  }
+  
+  .event:first-child {
+    border-top: none;
+  }
+  
+  .hour {
+    margin-right: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  .theme {
+    margin-left: 180px;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .location {
+    margin-left: auto;
+    color: gray;
+  }
+
+  /* Estilos para pantallas medianas */
+@media screen and (min-width: 390px) and (max-width: 991px) {
+  .crono h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: Gilroy;
+  }
+  .container-cr {
+    padding: 50px;
+    max-width: 400px;
+  }
+  .boton {
+    display: center;
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  .theme {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .event {
+    margin-top: 10px;
+    display: flex;
+    align-items: relative;
+    padding: 5px 5px;
+    border-radius: 2px;
+    border-top: 3px solid green;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 992px) {
+  .container-cr {
+    padding: 90px;
+  }
+}

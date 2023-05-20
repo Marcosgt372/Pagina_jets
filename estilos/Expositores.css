@@ -1,0 +1,234 @@
+/*EXPOSITORES*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Black.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("../font/Signika-Regular.ttf") format("TrueType");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo-expo h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: 'Gilroy-Black', sans-serif;
+  }
+  
+  .linea-sep {
+    border: none;
+    height: 10px;
+    background: #1a7b00;
+    margin: 12px auto;
+    width: 10%;
+    border-radius: 8px;
+  }
+  
+  /*cartas de expositores*/
+  
+  .expositores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .card {
+    position: relative;
+    width: 270px; /* 90% del valor original */
+    height: 270px; /* 90% del valor original */
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 93%; /* 90% del valor original */
+    height: 100%; /* 90% del valor original */
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 93%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(39%);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .overlay h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .overlay p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+  .titulo-expo h2 {
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: Gilroy;
+  }
+
+  .linea-sep {
+    height: 10px;
+    margin: 12px auto;
+    width: 10%;
+    border-radius: 8px;
+  }
+
+  .expositores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Gilroy;
+  }
+
+  .card {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+  }
+
+  .card img {
+    width: 93%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay {
+    width: 93%;
+    padding: 20px;
+    transform: translateY(39%);
+  }
+
+  .overlay h3 {
+    font-size: 24px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 991px) {
+  .titulo-expo h2 {
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: Gilroy;
+  }
+
+  .linea-sep {
+    height: 8px;
+    margin: 10px auto;
+    width: 20%;
+    border-radius: 8px;
+  }
+
+  .expositores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+
+  .card img {
+    width: 90%;
+    height: 100%;
+  }
+
+  .overlay {
+    width: 90%;
+    padding: 15px;
+    transform: translateY(29%);
+  }
+
+  .overlay h3 {
+    font-size: 20px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .titulo-expo h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: Gilroy;
+  }
+
+  .linea-sep {
+    height: 6px;
+    margin: 8px auto;
+    width: 30%;
+    border-radius: 8px;
+  }
+
+  .expositores {
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    width: 100%;
+    padding: 10px;
+    transform: translateY(0);
+  }
+
+  .overlay h3 {
+    font-size: 18px;
+  }
+
+  .overlay p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilos/Cronograma.css">
+  <link rel="stylesheet" href="../font/Gilroy-Black.ttf">
+  <link rel="stylesheet" href="../font/Signika-Regular.ttf">
+  <link rel="shortcut icon" href="../Logo/UTEPSA-Online.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--FONT AWESOME-->
+  <script src="https://kit.fontawesome.com/549b4689d9.js" crossorigin="anonymous"></script>
+      
+    <!-- Archivo JavaScript de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Cronograma</title>
+</head>
+<body>
+  <div class="crono">
+    <h2>CRONOGRAMA</h2>
+    <hr class="linea-sep" id="expo" />
+  </div>
+  <div class="cronograma">
+    <a class="boton" onclick="mostrarDia('dia1')">Día 1</a>
+    <a class="boton" onclick="mostrarDia('dia2')">Día 2</a>
+    <a class="boton" onclick="mostrarDia('dia3')">Día 3</a>
+    <a class="boton" onclick="mostrarDia('dia4')">Día 4</a>
+    <a href="../cronograma/Cronograma_JETS.pdf" download class="boton" id="descargas">Descargar cronograma completo</a>  
+  </div>
+  
+  <div class="dia1 cronograma-dia">
+    <div class="container-cr">
+      <h2>27 DE JUNIO</h2>
+      <div class="event">
+        <span class="hour">08:00 AM</span>
+        <ul>
+          <li class="theme">Acto Inaugural:</li>
+          <li class="theme">"Innovar y emprender de manera práctica" - Tecnologico de monterrey</li>
+          <li class="theme">Conferencia Inaugural</li>
+        </ul>
+        <span class="location">Lugar: Salon de Eventos - Aula E-300 - Aula-320</span>
+      </div>
+      <div class="event">
+        <span class="hour">10:30 AM</span>
+        <ul>
+          <li class="theme"> “Liderazgo y emprendimiento” Centro de Liderazgo y Emprendimiento</li>
+        </ul>
+        <span class="location">Lugar: Aula-300</span>
+      </div>
+      <div class="event">
+        <span class="hour">10:30 AM</span>
+        <ul>
+          <li class="theme">“Técnicas de ventas” Ingeniería Comercial</li>
+        </ul>
+        <span class="location">Lugar: Aula-608</span>
+      </div>
+      <div class="event">
+        <span class="hour">10:30 AM</span>
+        <ul>
+          <li class="theme">"Big data para emprender" Observatorio de Mercados Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Aula-320</span>
+      </div>
+      <div class="event">
+        <span class="hour">11:30 AM</span>
+        <ul>
+          <li class="theme">Foro</li>
+          <li class="theme">"Innovación y emprendimiento sostenible - Agenda ODS" - Pacto Global - Visión Mundial - Cooperación Alemana - Gaia Pacha</li>
+        </ul>
+        <span class="location">Lugar: Salon de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:00 PM</span>
+        <ul>
+          <li class="theme">Foro</li>
+          <li class="theme">"Innovación y Tecnología el futuro de la alimentacón" - ADAPICRUZ - CIAL - BFC - FAO - FRIDOSA - SOFIA</li>
+        </ul>
+        <span class="location">Lugar: Salon de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Taller</li>
+          <li class="theme">"Generación de negocios: La primera cita con tu emprendimiento" Nadia Nemer</li>
+        </ul>
+        <span class="location">Lugar: Salon de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Taller</li>
+          <li class="theme">"Crea tu propia cosmética" Centro de Investigación - Desarrollo e Innovación Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio Petrolera</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Taller</li>
+          <li class="theme">"Aprende y emprende soldando" Laboratorio de Ingeniería Mecánica Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio Mecánica</span>
+      </div>
+      <div class="event">
+        <span class="hour">16:30 PM</span>
+        <ul>
+          <li class="theme">Taller</li>
+          <li class="theme">"Cuidado!!!... Prevención de riesgos eléctronicos en emprendimiento" Laboratorio de Ingeniería Electronica Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio de Eléctrica</span>
+      </div>
+      <div class="event">
+        <span class="hour">16:30 PM</span>
+        <ul>
+          <li class="theme">Taller</li>
+          <li class="theme">"Ciber-privacidad" Laboratorio de Redes Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio de Redes</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Conferencia</li>
+          <li class="theme">"La ciberseguridad en el mundo global" cnl.William Llanos</li>
+        </ul>
+        <span class="location">Lugar: Sala de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Conferencia</li>
+          <li class="theme">"La ciberseguridad en el mundo global" cnl.William Llanos</li>
+        </ul>
+        <span class="location">Lugar: Sala de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Taller</li>
+          <li class="theme">"Emprende con velas, sueños y arcoíris" - Centro de Investigación, Desarrollo e Innovación Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio Petrolera</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Taller</li>
+          <li class="theme">"Seguridad básica en logística de transporte" Laboratorio de Ingeniería Mecánica Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio Mecánica</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Taller</li>
+          <li class="theme">"Mi primer emprendimiento soy yo" Centro Terapéutico Equilibrio</li>
+        </ul>
+        <span class="location">Lugar: Aula-320</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dia2 cronograma-dia" style="display: none;">
+    <div class="container-cr">
+      <h2>28 DE JUNIO</h2>
+      <div class="event">
+        <span class="hour">08:30 AM</span>
+        <ul>
+          <li class="theme">Conferencia:</li>
+          <li class="theme">"Innovación como medio para alcanzar la competitividad empresarial y el desarrollo social" - Tecnológico de Monterrey</li>
+          
+        </ul>
+        <span class="location">Lugar: Salon de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">09:00 AM</span>
+        <ul>
+          <li class="theme">Feria:</li>
+          <li class="theme">"Summit de emprendedores Utepsa alumni" - Estudiantes y Egresados UTEPSA</li>
+        </ul>
+        <span class="location">Lugar: Plaza Mohamad Hajari</span>
+      </div>
+      <div class="event">
+        <span class="hour">10:30 AM</span>
+        <ul>
+          <li class="theme">Conferencia:</li>
+          <li class="theme">"Marketing experiencial" - Nadia Nemer</li>
+        </ul>
+        <span class="location">Lugar: Sala de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">11:30 AM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Marketing con inteligencia artificial" - Centro de innovación y Emprendimiento UTEPSA</li>
+        </ul>
+        <span class="location">Lugar: Aula-E320</span>
+      </div>
+      <div class="event">
+        <span class="hour">11:30 AM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Importación Fácil" - Comercio Internacional</li>
+        </ul>
+        <span class="location">Lugar: Aula-300</span>
+      </div>
+      <div class="event">
+        <span class="hour">11:30 AM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Herramientas para la planificación financiera" - Ingeniería Financiera</li>
+        </ul>
+        <span class="location">Lugar: Aula-608</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Foro:</li>
+          <li class="theme">"Estado, empresa, academia y comunidad, la cuádruple hélice para el desarrollo integral y la innovación" - Gobernación - CAINCO - SIB Santa Cruz, USP</li>
+        </ul>
+        <span class="location">Lugar: Sala de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Tu videojuego en 30 minutos" - Comunidad de desarrolladores Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio de Sistemas</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Inteligencia Artificial para mi emprendimiento" - Centro Tecnológico Educativo Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio de Sistemas</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Una imagen vende más que mil palabras-fotografía" - Laboratorio de Audiovisuales Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio de Comunicación</span>
+      </div>
+      <div class="event">
+        <span class="hour">16:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Vive la experiencia con drones" - Laboratorio de Electrónica Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio de Sistemas</span>
+      </div>
+      <div class="event">
+        <span class="hour">16:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Salud Integral y Mental" - Centro Terapéutico Equilibrio </li>
+        </ul>
+        <span class="location">Lugar: Aula E-608</span>
+      </div>
+      <div class="event">
+        <span class="hour">16:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Marketing Jurídico" - Laboratorio Jurídico Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Aula E-320</span>
+      </div>
+      <div class="event">
+        <span class="hour">16:30 PM</span>
+        <ul>
+          <li class="theme">Conferencia:</li>
+          <li class="theme">"Marketing Digital un ejemplo de cómo emprender e innovar" - Micaela Sabia</li>
+        </ul>
+        <span class="location">Lugar: Aula E-300</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">"Gala de Premiación al Emprendimiento</li>
+        </ul>
+        <span class="location">Lugar: Sala de Eventos</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dia3 cronograma-dia" style="display: none;">
+    <div class="container-cr">
+      <h2>29 DE JUNIO</h2>
+      <div class="event">
+        <span class="hour">08:30 AM</span>
+        <ul>
+          <li class="theme">Acto Inaugural: Hackaton Internacional</li>
+          <li class="theme">"Ciudades sustentables e Inteligentes" - Denis Nakamura</li>
+        </ul>
+        <span class="location">Lugar: Sala de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">09:00 AM</span>
+        <ul>
+          <li class="theme">Feria de Proyectos - SIB-CAINCO</li>
+        </ul>
+        <span class="location">Lugar: Plaza Mohamad Hajari</span>
+      </div>
+      <div class="event">
+        <span class="hour">09:00 AM</span>
+        <ul>
+          <li class="theme">Feria de Colegios</li>
+        </ul>
+        <span class="location">Lugar: Cancha de cemento</span>
+      </div>
+      <div class="event">
+        <span class="hour">09:00 AM</span>
+        <ul>
+          <li class="theme">Actividad lúdica:</li>
+          <li class="theme">"Carrera de Drones"</li>
+        </ul>
+        <span class="location">Lugar: Cancha de pasto</span>
+      </div>
+      <div class="event">
+        <span class="hour">10:00 AM</span>
+        <ul>
+          <li class="theme">Actividad lúdica:</li>
+          <li class="theme">"Batalla de gallitos robots"</li>
+        </ul>
+        <span class="location">Lugar: Plaza Mohamad Hajari</span>
+      </div>
+      <div class="event">
+        <span class="hour">12:30 AM</span>
+        <ul>
+          <li class="theme">Actividad lúdica:</li>
+          <li class="theme">"Show de talentos"</li>
+        </ul>
+        <span class="location">Lugar: Plaza Mohamad Hajari</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"La ruta legal del emprendimiento" - Laboratorio Jurídico Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Aula E-320</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Lácteos Nutrición y Salud" - Laboratorio de Ingeniería Industrial Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio de Procesos</span>
+      </div>
+      <div class="event">
+        <span class="hour">14:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Como preparar una charla TED" - Laboratorio de Comunicación Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Aula E-320</span>
+      </div>
+      <div class="event">
+        <span class="hour">15:30 PM</span>
+        <ul>
+          <li class="theme">Actividad lúdica:</li>
+          <li class="theme">"Final Olimpiadas e9"</li>
+        </ul>
+        <span class="location">Lugar: Cancha de Pasto</span>
+      </div>
+      <div class="event">
+        <span class="hour">16:30 PM</span>
+        <ul>
+          <li class="theme">Actividad lúdica:</li>
+          <li class="theme">"Concurso de ensayos Dilo en inglés"</li>
+        </ul>
+        <span class="location">Lugar: Aula E-320</span>
+      </div>
+      <div class="event">
+        <span class="hour">16:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Habilidades de Negociación para los emprendedores" - Ingeniería Comercial</li>
+        </ul>
+        <span class="location">Lugar: Aula E-320</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Foro:</li>
+          <li class="theme">"Innovaciones Tecnológicas para garantizar la seguridad hídrica" - ABIS - Saguapag - Cooperación Alemana</li>
+        </ul>
+        <span class="location">Lugar: Sala de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Mi casa Inteligente" - Laboratorio de Electrónica y de Sistemas</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio de electrónica</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Contratos del entorno digítal" - Laboratorio Jurídico Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Aula E-320</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Limpieza total" - Laboratorio de Ingeniería Industrial Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Laboratorio de Procesos</span>
+      </div>
+      <div class="event">
+        <span class="hour">19:30 PM</span>
+        <ul>
+          <li class="theme">Taller:</li>
+          <li class="theme">"Financiamiento para tu emprendimiento" - Centro de Innovación y Emprendimiento Utepsa</li>
+        </ul>
+        <span class="location">Lugar: Aula E-300</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dia4 cronograma-dia" style="display: none;">
+    <div class="container-cr">
+      <h2>30 DE JUNIO</h2>
+      <div class="event">
+        <span class="hour">08:00 AM</span>
+        <ul>
+          <li class="theme">Conferencia:</li>
+          <li class="theme">"Innovación tecnológica en la educación: tendencias, herramientas y mejores ejemplos" - Marliz Arteaga - Universidad de Florida</li>
+        </ul>
+        <span class="location">Lugar: En Línea</span>
+      </div>
+      <div class="event">
+        <span class="hour">08:30 AM</span>
+        <ul>
+          <li class="theme">Actividad Lúdica:</li>
+          <li class="theme">"Rally Matemático"</li>
+        </ul>
+        <span class="location">Lugar: Café Internet</span>
+      </div>
+      <div class="event">
+        <span class="hour">09:00 AM</span>
+        <ul>
+          <li class="theme">Actividad Lúdica:</li>
+          <li class="theme">"Emprendematch"</li>
+        </ul>
+        <span class="location">Lugar: Aula E-320</span>
+      </div>
+      <div class="event">
+        <span class="hour">09:30 AM</span>
+        <ul>
+          <li class="theme">Actividad Lúdica:</li>
+          <li class="theme">"Desafio Extremo"</li>
+        </ul>
+        <span class="location">Lugar: Utepsa</span>
+      </div>
+      <div class="event">
+        <span class="hour">10:30 AM</span>
+        <ul>
+          <li class="theme">Conferencia:</li>
+          <li class="theme">"Las Vegas, Dubai y Santa Cruz... ejemplos de innovación" - Denis Nakamura - Universidad de Sao Paulo</li>
+        </ul>
+        <span class="location">Lugar: Sala de Eventos</span>
+      </div>
+      <div class="event">
+        <span class="hour">13:30 PM</span>
+        <ul>
+          <li class="theme">Actividad lúdica:</li>
+          <li class="theme">"Final Show de Talentos"</li>
+        </ul>
+        <span class="location">Lugar: Plaza Mohamad Hajari</span>
+      </div>
+      <div class="event">
+        <span class="hour">15:00 PM</span>
+        <ul>
+          <li class="theme">Clausura:</li>
+          <li class="theme">Reconocimientos</li>
+        </ul>
+        <span class="location">Lugar: Plaza Mohamad Hajari</span>
+      </div>
+  </div>
+</section>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/venobox/venobox/venobox.min.js"></script>
+    <script src="../java/Cronograma.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</html>

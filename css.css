@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	font-size: 2em;
+	margin: 0;
+	flex-basis: 100%;
+	text-align: center;
+}
+
+header nav {
+	flex-basis: 100%;
+	margin-top: 10px;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+header nav li {
+	margin: 0 10px;
+}
+
+header nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+header nav a:hover {
+	color: #f2f2f2;
+}
+
+/* Estilos del contenido principal */
+main {
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+section p {
+	line-height: 1.5;
+}
+
+/* Estilos del pie de página */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Estilos responsive */
+@media screen and (min-width: 768px) {
+	header {
+		padding: 20px 40px;
+	}
+
+	header h1 {
+		flex-basis: auto;
+	}
+
+	header nav {
+		flex-basis: auto;
+		margin-top: 0;
+	}
+
+	header nav ul {
+		justify-content: flex-end;
+	}
+
+	main {
+		padding: 40px;
+	}
+
+	section {
+		margin-bottom: 60px;
+	}
+
+	footer {
+		padding: 40px;
+	}
+}

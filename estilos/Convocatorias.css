@@ -1,0 +1,193 @@
+.linea-sep {
+  border: none;
+  height: 10px;
+  background: #1a7b00;
+  margin: 35px auto;
+  width: 10%;
+  border-radius: 8px;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Black.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("../font/Signika-Regular.ttf") format("TrueType");
+}
+
+
+.conv h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+  font-family: Gilroy;
+}
+
+.image-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.image-card {
+  position: relative;
+  width: calc(25% - 20px);
+  height: 210px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-card-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-card:hover .image-card-image {
+  transform: scale(1.2);
+}
+
+.image-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.image-card:hover .image-card-overlay {
+  opacity: 1;
+}
+
+.image-card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: signika;
+}
+
+.image-card-description {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.image-card-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-family: signika;
+}
+
+.image-card-link:hover {
+  background-color: #fff;
+  color: #000;
+  font-family: signika;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 940px;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+  @media only screen and (max-width: 600px) {
+    .conv h2 {
+      font-size: 30px;
+      margin-top: 30px;
+    }
+  
+    .image-card {
+      width: 300px;
+      height: 210px; /* Igual que en el tamaño normal */
+    }
+  
+    .image-card-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0;
+    }
+    
+    .image-card:hover .image-card-overlay {
+      opacity: 1;
+    }
+    
+    #pdf {
+      max-width: 100%;
+    }
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .conv h2 {
+      font-size: 30px;
+      margin-top: 30px;
+    }
+  
+    .image-card {
+      width: calc(50% - 10px);
+      height: 200px;
+    }
+    #pdf {
+      max-width: 100%;
+    }
+  }
